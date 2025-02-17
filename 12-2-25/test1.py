@@ -11,7 +11,7 @@ with open("similarity.pkl", "rb") as f:
     similarity = pickle.load(f)  # NumPy similarity matrix
 
 # Step 2: MongoDB Connection
-MONGO_URI = "mongodb+srv://prachikoli:grocerease5@cluster0.ebrmr.mongodb.net/prachikoli"  # Replace with your MongoDB Atlas URI
+MONGO_URI = ""  # Replace with your MongoDB Atlas URI
 client = pymongo.MongoClient(MONGO_URI)
 db = client["prachikoli"]  # Replace with your database name
 collection = db["products"]  # Replace with your collection name
